@@ -118,7 +118,7 @@
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(121, 23);
             this.comboBox2.TabIndex = 7;
-            this.comboBox2.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
+       
             // 
             // label3
             // 
@@ -128,7 +128,7 @@
             this.label3.Size = new System.Drawing.Size(42, 15);
             this.label3.TabIndex = 8;
             this.label3.Text = "Yarı Yıl";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
+            
             // 
             // comboBox3
             // 

@@ -19,6 +19,7 @@ namespace OgrenciNotKayitSistemi
             ilk();
         }
 
+        // form3 form 2 deki seçilen öğrenci için açılır.Öğrencinin ID si form 3 te tutulur.
         public Form3(int id)
         {
             this.id = id;
@@ -26,6 +27,7 @@ namespace OgrenciNotKayitSistemi
             ilk();
         }
 
+        // öğrencinin derslerini listeleyen metod.
         public void ilk()
         {
             Ogrenci ogrenci = new Ogrenci();
@@ -63,7 +65,8 @@ namespace OgrenciNotKayitSistemi
             dataGridView1.Columns.Add(dgvButton1);
         }
 
-
+        // not girişi yapılmasını sağlayan metod.Comboboxlar boşşa  not girişi gerçekleşmez.Yarıyıl bilgisi ve ders adi aynı
+        // seçilirse not girişi gerçekleşmez.Bilgiler istenilen şekilde girilirse Comboboxlar temizlenir.Ardından not listesi güncellenir.
         private void button1_Click(object sender, EventArgs e)
         {
             Ogrenci ogrenci = new Ogrenci();
@@ -100,6 +103,10 @@ namespace OgrenciNotKayitSistemi
             ilk();
         }
 
+
+        //  Öğrencinin notunu silen metod.
+
+        
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             if (e.ColumnIndex ==5)
@@ -128,82 +135,74 @@ namespace OgrenciNotKayitSistemi
             }
         }
 
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
+        
+        // Yariyil seçiminden sonra ders listesi aşağıdaki metodla güncellenir.
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             comboBox3.Items.Clear();
             switch (comboBox1.SelectedIndex)
             {
                 case 0: {
-                    comboBox3.Items.Add("Ders 1");
-                    comboBox3.Items.Add("Ders 2");
-                        comboBox3.Items.Add("Ders 3");
-                        comboBox3.Items.Add("Ders 4");
+                    comboBox3.Items.Add("matematik");
+                    comboBox3.Items.Add("fizik");
+                        comboBox3.Items.Add("kimya");
+                        comboBox3.Items.Add("biyoloji");
                         break;
                 }
                 case 1:
                     {
-                        comboBox3.Items.Add("Ders 1");
-                        comboBox3.Items.Add("Ders 2");
-                        comboBox3.Items.Add("Ders 3");
-                        comboBox3.Items.Add("Ders 4");
+                        comboBox3.Items.Add("matematik");
+                        comboBox3.Items.Add("fizik");
+                        comboBox3.Items.Add("kimya");
+                        comboBox3.Items.Add("biyoloji");
                         break;
                     }
                 case 2:
                     {
-                        comboBox3.Items.Add("Ders 1");
-                        comboBox3.Items.Add("Ders 2");
-                        comboBox3.Items.Add("Ders 3");
-                        comboBox3.Items.Add("Ders 4");
+                        comboBox3.Items.Add("matematik");
+                        comboBox3.Items.Add("fizik");
+                        comboBox3.Items.Add("kimya");
+                        comboBox3.Items.Add("biyoloji");
                         break;
                     }
                 case 3:
                     {
-                        comboBox3.Items.Add("Ders 1");
-                        comboBox3.Items.Add("Ders 2");
-                        comboBox3.Items.Add("Ders 3");
-                        comboBox3.Items.Add("Ders 4");
+                        comboBox3.Items.Add("matematik");
+                        comboBox3.Items.Add("fizik");
+                        comboBox3.Items.Add("kimya");
+                        comboBox3.Items.Add("biyoloji");
                         break;
                     }
                 case 4:
                     {
-                        comboBox3.Items.Add("Ders 1");
-                        comboBox3.Items.Add("Ders 2");
-                        comboBox3.Items.Add("Ders 3");
-                        comboBox3.Items.Add("Ders 4");
+                        comboBox3.Items.Add("matematik");
+                        comboBox3.Items.Add("fizik");
+                        comboBox3.Items.Add("kimya");
+                        comboBox3.Items.Add("biyoloji");
                         break;
                     }
                 case 5:
                     {
-                        comboBox3.Items.Add("Ders 1");
-                        comboBox3.Items.Add("Ders 2");
-                        comboBox3.Items.Add("Ders 3");
-                        comboBox3.Items.Add("Ders 4");
+                        comboBox3.Items.Add("matematik");
+                        comboBox3.Items.Add("fizik");
+                        comboBox3.Items.Add("kimya");
+                        comboBox3.Items.Add("biyoloji");
                         break;
                     }
                 case 6:
                     {
-                        comboBox3.Items.Add("Ders 1");
-                        comboBox3.Items.Add("Ders 2");
-                        comboBox3.Items.Add("Ders 3");
-                        comboBox3.Items.Add("Ders 4");
+                        comboBox3.Items.Add("matematik");
+                        comboBox3.Items.Add("fizik");
+                        comboBox3.Items.Add("kimya");
+                        comboBox3.Items.Add("biyoloji");
                         break;
                     }
                 case 7:
                     {
-                        comboBox3.Items.Add("Ders 1");
-                        comboBox3.Items.Add("Ders 2");
-                        comboBox3.Items.Add("Ders 3");
-                        comboBox3.Items.Add("Ders 4");
+                        comboBox3.Items.Add("matematik");
+                        comboBox3.Items.Add("fizik");
+                        comboBox3.Items.Add("kimya");
+                        comboBox3.Items.Add("biyoloji");
                         break;
                     }
 
